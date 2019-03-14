@@ -1,0 +1,127 @@
+@import "bootstrap.min.css";
+@import "fonts.css";
+@import "../fontawesome/css/all.min.css";
+@import "components/colores";
+@import "components/reset";
+@import "components/header";
+@import "components/footer";
+@import "components/aside";
+@import "components/carousel";
+@import "components/home";
+@import "components/nuestra-clinica";
+@import "components/equipo";
+@import "components/especialidades";
+@import "components/tips";
+@import "components/single-tip";
+@import "components/sucursales";
+@import "components/contacto";
+
+.linea {
+	width: 100%;
+	height: 1px;
+	background: $gris-claro;
+}
+.row-espacio {
+	margin-top: 50px;
+	@media (max-width: 991px) {
+		margin-top: 0;
+	}
+}
+.bg-color {
+	background: #f5fcff;
+	@media (max-width: 991px) {
+		.postid- {
+			background: $blanco;
+		}
+	}
+}
+.bg-titulo {
+	background: url('../images/bg-titulo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	h1 {
+		text-transform: uppercase;
+		font-size: 40px;
+		color: $blanco;
+		span {
+			font-family: "Roboto Bold";
+		}
+	}
+}
+.tips {
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 36px;
+		color: $azul;
+		span {
+			font-family: "Roboto Bold";
+		}
+	}
+	p {
+		width: 70%;
+		margin: 0 auto 60px auto;
+		text-align: center;
+		font-family: "Roboto Light";
+		font-size: 18px;
+		color: $gris-medio;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	.tip {
+		a {
+			margin: 0 auto;
+			padding: 0;
+			background: none;
+			text-transform: none;
+			img {
+				width: 100%;
+				transition: .3s ease-in-out;
+			}
+			h3 {
+				height: 50px;
+				margin: 20px 0;
+				text-align: center;
+				font-family: "Roboto Medium";
+				font-size: 24px;
+				color: $azul;
+				transition: .3s ease-in-out;
+			}
+			&:hover {
+				background: none;
+				img {
+					opacity: .5;
+					transition: .3s ease-in;
+				}
+				h3 {
+					color: $naranjo-hover;
+					transition: .3s ease-in;
+				}
+			}
+		}
+		p {
+			width: 100%;
+			margin: 0 auto;
+			text-align: justify;
+			font-family: "Roboto Light";
+			font-size: 18px;
+			color: $gris-medio;
+		}
+	}
+	a {
+		display: table;
+		margin: 60px auto 0 auto;
+		padding: 20px 60px;
+		background: $naranjo;
+		text-transform: uppercase;
+		font-family: "Roboto Medium";
+		font-size: 14px;
+		color: $blanco;
+		&:hover {
+			background: $naranjo-hover;
+		}
+	}
+}

@@ -1,0 +1,1940 @@
+@charset "UTF-8";
+@import url(bootstrap.min.css);
+@import url(fonts.css);
+@import url(../fontawesome/css/all.min.css);
+/* line 1, ../sass/components/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, ../sass/components/_reset.scss */
+*:focus {
+  border: none;
+  box-shadow: none;
+  outline: none !important;
+}
+
+/* line 11, ../sass/components/_reset.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  font-family: "Roboto Regular";
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 19, ../sass/components/_reset.scss */
+p {
+  margin: 0;
+}
+
+/* line 22, ../sass/components/_reset.scss */
+a {
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+/* line 26, ../sass/components/_reset.scss */
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+/* line 31, ../sass/components/_reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 34, ../sass/components/_reset.scss */
+main {
+  margin-top: 150px;
+}
+@media (max-width: 991px) {
+  /* line 34, ../sass/components/_reset.scss */
+  main {
+    margin-top: 195px;
+  }
+}
+
+/* line 40, ../sass/components/_reset.scss */
+section {
+  padding: 50px 0;
+}
+
+/* line 1, ../sass/components/_header.scss */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: #FFF;
+}
+@media (max-width: 991px) {
+  /* line 8, ../sass/components/_header.scss */
+  header .container {
+    max-width: none;
+  }
+}
+/* line 12, ../sass/components/_header.scss */
+header .horarios {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+/* line 16, ../sass/components/_header.scss */
+header .horarios i {
+  color: #3e537d;
+}
+/* line 19, ../sass/components/_header.scss */
+header .horarios p {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #3e537d;
+}
+@media (max-width: 1199px) {
+  /* line 19, ../sass/components/_header.scss */
+  header .horarios p {
+    font-size: 12px;
+  }
+}
+/* line 29, ../sass/components/_header.scss */
+header .contacto {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+/* line 33, ../sass/components/_header.scss */
+header .contacto div {
+  flex: 1;
+  text-align: right;
+}
+/* line 36, ../sass/components/_header.scss */
+header .contacto div i {
+  color: #3e537d;
+}
+/* line 39, ../sass/components/_header.scss */
+header .contacto div a {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #3e537d;
+}
+@media (max-width: 1199px) {
+  /* line 39, ../sass/components/_header.scss */
+  header .contacto div a {
+    font-size: 12px;
+  }
+}
+/* line 46, ../sass/components/_header.scss */
+header .contacto div a:hover {
+  color: #f76b20;
+}
+/* line 53, ../sass/components/_header.scss */
+header a.logo img {
+  max-width: 200px;
+}
+/* line 57, ../sass/components/_header.scss */
+header nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  /* line 57, ../sass/components/_header.scss */
+  header nav {
+    height: auto;
+  }
+}
+/* line 64, ../sass/components/_header.scss */
+header nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+/* line 70, ../sass/components/_header.scss */
+header nav ul li {
+  margin: 0 10px;
+}
+@media (max-width: 1199px) {
+  /* line 70, ../sass/components/_header.scss */
+  header nav ul li {
+    margin: 0 7px;
+  }
+}
+/* line 75, ../sass/components/_header.scss */
+header nav ul li a {
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #3e537d;
+}
+@media (max-width: 1199px) {
+  /* line 75, ../sass/components/_header.scss */
+  header nav ul li a {
+    font-size: 12px;
+  }
+}
+/* line 84, ../sass/components/_header.scss */
+header nav ul li a:hover {
+  color: #f76b20;
+}
+/* line 88, ../sass/components/_header.scss */
+header nav ul li:last-child {
+  margin-right: 0;
+  background: #f68244;
+}
+/* line 91, ../sass/components/_header.scss */
+header nav ul li:last-child a {
+  padding: 20px;
+  color: #FFF;
+}
+/* line 94, ../sass/components/_header.scss */
+header nav ul li:last-child a:hover {
+  background: #f76b20;
+}
+@media (max-width: 991px) {
+  /* line 103, ../sass/components/_header.scss */
+  header .navbar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /* line 107, ../sass/components/_header.scss */
+  header .navbar-brand {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 110, ../sass/components/_header.scss */
+  header .navbar-brand img {
+    width: 300px;
+  }
+}
+@media (max-width: 991px) and (max-width: 400px) {
+  /* line 110, ../sass/components/_header.scss */
+  header .navbar-brand img {
+    width: 200px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 118, ../sass/components/_header.scss */
+  header nav button {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  /* line 122, ../sass/components/_header.scss */
+  header nav button i {
+    font-size: 40px;
+    color: #3e537d;
+  }
+  /* line 127, ../sass/components/_header.scss */
+  header nav ul {
+    display: block;
+    margin-top: 50px;
+  }
+  /* line 130, ../sass/components/_header.scss */
+  header nav ul li {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #3e537d;
+  }
+  /* line 135, ../sass/components/_header.scss */
+  header nav ul li a {
+    text-align: center;
+    font-size: 14px;
+  }
+  /* line 139, ../sass/components/_header.scss */
+  header nav ul li:hover {
+    background: #f76b20;
+  }
+  /* line 141, ../sass/components/_header.scss */
+  header nav ul li:hover a {
+    color: #FFF;
+  }
+  /* line 145, ../sass/components/_header.scss */
+  header nav ul li:last-child {
+    padding: 10px 0;
+    background: none;
+    border-bottom: 1px solid #3e537d;
+  }
+  /* line 149, ../sass/components/_header.scss */
+  header nav ul li:last-child a {
+    padding: 0;
+    color: #3e537d;
+  }
+  /* line 152, ../sass/components/_header.scss */
+  header nav ul li:last-child a:hover {
+    background: none;
+  }
+  /* line 156, ../sass/components/_header.scss */
+  header nav ul li:last-child:hover {
+    background: #f76b20;
+  }
+  /* line 158, ../sass/components/_header.scss */
+  header nav ul li:last-child:hover a {
+    color: #FFF;
+  }
+}
+
+/* line 1, ../sass/components/_footer.scss */
+footer {
+  padding-top: 70px;
+  background: #414d5f;
+}
+@media (max-width: 991px) {
+  /* line 1, ../sass/components/_footer.scss */
+  footer {
+    margin-bottom: 100px;
+  }
+}
+/* line 8, ../sass/components/_footer.scss */
+footer a.logo img {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  /* line 8, ../sass/components/_footer.scss */
+  footer a.logo img {
+    margin-bottom: 50px;
+  }
+}
+/* line 16, ../sass/components/_footer.scss */
+footer p {
+  width: 80%;
+  font-size: 14px;
+  color: #FFF;
+}
+@media (max-width: 1199px) {
+  /* line 16, ../sass/components/_footer.scss */
+  footer p {
+    font-size: 12px;
+  }
+}
+/* line 24, ../sass/components/_footer.scss */
+footer h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  color: #FFF;
+}
+@media (max-width: 991px) {
+  /* line 24, ../sass/components/_footer.scss */
+  footer h2 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 34, ../sass/components/_footer.scss */
+  footer ul {
+    margin-bottom: 0;
+  }
+}
+/* line 38, ../sass/components/_footer.scss */
+footer ul li {
+  margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  /* line 41, ../sass/components/_footer.scss */
+  footer ul li br {
+    display: none;
+  }
+}
+/* line 45, ../sass/components/_footer.scss */
+footer ul li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #FFF;
+}
+@media (max-width: 1199px) {
+  /* line 45, ../sass/components/_footer.scss */
+  footer ul li a {
+    font-size: 12px;
+  }
+}
+/* line 52, ../sass/components/_footer.scss */
+footer ul li a:hover {
+  color: #f76b20;
+}
+/* line 56, ../sass/components/_footer.scss */
+footer ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 61, ../sass/components/_footer.scss */
+footer .linea {
+  margin-top: 20px;
+  border: 1px solid #516076;
+}
+/* line 65, ../sass/components/_footer.scss */
+footer .copyright {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  /* line 65, ../sass/components/_footer.scss */
+  footer .copyright {
+    height: 100px;
+  }
+}
+/* line 72, ../sass/components/_footer.scss */
+footer .copyright div:nth-child(2) {
+  text-align: right;
+}
+@media (max-width: 991px) {
+  /* line 72, ../sass/components/_footer.scss */
+  footer .copyright div:nth-child(2) {
+    text-align: left;
+  }
+}
+/* line 78, ../sass/components/_footer.scss */
+footer .copyright p {
+  font-size: 14px;
+}
+@media (max-width: 1199px) {
+  /* line 78, ../sass/components/_footer.scss */
+  footer .copyright p {
+    font-size: 12px;
+  }
+}
+/* line 84, ../sass/components/_footer.scss */
+footer .copyright span {
+  font-size: 14px;
+  color: #FFF;
+}
+@media (max-width: 1199px) {
+  /* line 84, ../sass/components/_footer.scss */
+  footer .copyright span {
+    font-size: 12px;
+  }
+}
+/* line 91, ../sass/components/_footer.scss */
+footer .copyright a {
+  margin-left: 10px;
+  color: #FFF;
+}
+/* line 94, ../sass/components/_footer.scss */
+footer .copyright a:hover {
+  color: #f76b20;
+}
+/* line 99, ../sass/components/_footer.scss */
+footer .card {
+  background: none;
+  border: 0;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  border-radius: 0;
+}
+/* line 105, ../sass/components/_footer.scss */
+footer .card:nth-child(2) {
+  border-top: 0;
+}
+/* line 108, ../sass/components/_footer.scss */
+footer .card button {
+  margin-bottom: 10px;
+  padding: 10px 0 0 0;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 115, ../sass/components/_footer.scss */
+footer .card button:after {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  font-size: 20px;
+  color: #FFF;
+  content: "-";
+}
+/* line 123, ../sass/components/_footer.scss */
+footer .card button.collapsed:after {
+  content: "+";
+}
+/* line 126, ../sass/components/_footer.scss */
+footer .card button:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+/* line 131, ../sass/components/_footer.scss */
+footer .card a.boton-reserva {
+  display: none !important;
+}
+/* line 135, ../sass/components/_footer.scss */
+footer a.boton-reserva {
+  display: none;
+}
+@media (max-width: 991px) {
+  /* line 135, ../sass/components/_footer.scss */
+  footer a.boton-reserva {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #f68244;
+    border-top: 3px solid #f76b20;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #FFF;
+  }
+  /* line 152, ../sass/components/_footer.scss */
+  footer a.boton-reserva:hover {
+    background: #f76b20;
+  }
+}
+
+/* line 2, ../sass/components/_aside.scss */
+aside .categorias {
+  margin-bottom: 80px;
+}
+/* line 4, ../sass/components/_aside.scss */
+aside .categorias h2 {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ababab;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+  font-size: 28px;
+  color: #3e537d;
+}
+@media (max-width: 991px) {
+  /* line 4, ../sass/components/_aside.scss */
+  aside .categorias h2 {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  /* line 16, ../sass/components/_aside.scss */
+  aside .categorias ul {
+    display: none;
+  }
+}
+/* line 20, ../sass/components/_aside.scss */
+aside .categorias ul li {
+  margin-bottom: 30px;
+}
+/* line 22, ../sass/components/_aside.scss */
+aside .categorias ul li a {
+  font-family: "Roboto Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3e537d;
+}
+/* line 27, ../sass/components/_aside.scss */
+aside .categorias ul li a:hover {
+  color: #f76b20;
+}
+/* line 31, ../sass/components/_aside.scss */
+aside .categorias ul li:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  /* line 36, ../sass/components/_aside.scss */
+  aside .categorias .accordion-toggle {
+    display: none;
+  }
+}
+/* line 40, ../sass/components/_aside.scss */
+aside .categorias .accordion-toggle h2 {
+  display: block;
+  margin-bottom: 0;
+}
+/* line 44, ../sass/components/_aside.scss */
+aside .categorias .accordion-toggle:after {
+  position: absolute;
+  top: -2px;
+  right: 15px;
+  font-size: 30px;
+  color: #f68244;
+  content: "-";
+}
+/* line 52, ../sass/components/_aside.scss */
+aside .categorias .accordion-toggle.collapsed:after {
+  content: "+";
+}
+@media (min-width: 992px) {
+  /* line 56, ../sass/components/_aside.scss */
+  aside .categorias .collapse {
+    display: none;
+  }
+}
+/* line 60, ../sass/components/_aside.scss */
+aside .categorias .collapse ul {
+  display: block;
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  /* line 66, ../sass/components/_aside.scss */
+  aside .post-recientes {
+    display: none;
+  }
+}
+/* line 70, ../sass/components/_aside.scss */
+aside .post-recientes h2 {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ababab;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+  font-size: 28px;
+  color: #3e537d;
+}
+@media (max-width: 991px) {
+  /* line 70, ../sass/components/_aside.scss */
+  aside .post-recientes h2 {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  /* line 82, ../sass/components/_aside.scss */
+  aside .post-recientes ul {
+    display: none;
+  }
+}
+/* line 86, ../sass/components/_aside.scss */
+aside .post-recientes ul li {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* line 92, ../sass/components/_aside.scss */
+aside .post-recientes ul li img {
+  width: 75px;
+  height: 75px;
+}
+/* line 96, ../sass/components/_aside.scss */
+aside .post-recientes ul li a {
+  margin-left: 20px;
+  font-family: "Roboto Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3e537d;
+}
+/* line 102, ../sass/components/_aside.scss */
+aside .post-recientes ul li a:hover {
+  color: #f76b20;
+}
+/* line 106, ../sass/components/_aside.scss */
+aside .post-recientes ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 1, ../sass/components/_carousel.scss */
+.carousel {
+  display: none;
+}
+@media (max-width: 991px) {
+  /* line 1, ../sass/components/_carousel.scss */
+  .carousel {
+    display: block;
+  }
+}
+/* line 6, ../sass/components/_carousel.scss */
+.carousel .carousel-indicators {
+  bottom: -30px;
+}
+/* line 8, ../sass/components/_carousel.scss */
+.carousel .carousel-indicators li {
+  background: #35b3dc;
+}
+/* line 13, ../sass/components/_carousel.scss */
+.carousel .carousel-indicators .active {
+  background: #f68244;
+}
+/* line 16, ../sass/components/_carousel.scss */
+.carousel .carousel-indicators:hover {
+  background: #f68244;
+}
+/* line 20, ../sass/components/_carousel.scss */
+.carousel .especialidad {
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  padding: 100px 0;
+  background: #35b3dc;
+}
+@media (max-width: 991px) {
+  /* line 20, ../sass/components/_carousel.scss */
+  .carousel .especialidad {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 32, ../sass/components/_carousel.scss */
+.carousel .especialidad img {
+  width: auto;
+  height: 100px;
+  margin-bottom: 15px;
+}
+/* line 37, ../sass/components/_carousel.scss */
+.carousel .especialidad p {
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFF;
+}
+/* line 44, ../sass/components/_carousel.scss */
+.carousel .especialidad:hover {
+  background: #f68244;
+  transform: scale(1.05);
+}
+/* line 49, ../sass/components/_carousel.scss */
+.carousel .especialista {
+  width: 50vw;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  background: #FFF;
+  border-bottom: 5px solid #35b3dc;
+}
+@media (max-width: 767px) {
+  /* line 49, ../sass/components/_carousel.scss */
+  .carousel .especialista {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 60, ../sass/components/_carousel.scss */
+.carousel .especialista img {
+  width: 100%;
+}
+/* line 63, ../sass/components/_carousel.scss */
+.carousel .especialista h3 {
+  margin: 10px 0;
+  text-align: center;
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  color: #3e537d;
+}
+/* line 70, ../sass/components/_carousel.scss */
+.carousel .especialista p {
+  display: block;
+  margin: 0 auto 10px auto;
+  font-family: "Roboto Light";
+  font-size: 12px;
+  color: #ababab;
+}
+/* line 78, ../sass/components/_carousel.scss */
+.carousel .tip {
+  width: 50vw;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  /* line 78, ../sass/components/_carousel.scss */
+  .carousel .tip {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 87, ../sass/components/_carousel.scss */
+.carousel .tip a {
+  width: 100%;
+}
+/* line 89, ../sass/components/_carousel.scss */
+.carousel .tip a img {
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+/* line 93, ../sass/components/_carousel.scss */
+.carousel .tip a h3 {
+  height: 80px !important;
+  padding: 0 30px;
+}
+/* line 98, ../sass/components/_carousel.scss */
+.carousel .tip p {
+  display: block;
+  padding: 0 30px;
+  text-align: center !important;
+}
+
+/* line 1, ../sass/components/_home.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* line 4, ../sass/components/_home.scss */
+.swiper-container .swiper-slide {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+/* line 11, ../sass/components/_home.scss */
+.swiper-container .swiper-slide .texto {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  /* line 11, ../sass/components/_home.scss */
+  .swiper-container .swiper-slide .texto {
+    width: 100%;
+  }
+}
+/* line 16, ../sass/components/_home.scss */
+.swiper-container .swiper-slide .texto h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #FFF;
+}
+/* line 21, ../sass/components/_home.scss */
+.swiper-container .swiper-slide .texto h2 span {
+  font-family: "Roboto Bold";
+}
+/* line 25, ../sass/components/_home.scss */
+.swiper-container .swiper-slide .texto p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 30, ../sass/components/_home.scss */
+.swiper-container .swiper-slide .texto a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #FFF;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #3e537d;
+}
+/* line 38, ../sass/components/_home.scss */
+.swiper-container .swiper-slide .texto a:hover {
+  background: #f76b20;
+  color: #FFF;
+}
+
+/* line 46, ../sass/components/_home.scss */
+.informacion {
+  display: flex;
+  flex-flow: column wrap;
+}
+@media (max-width: 991px) {
+  /* line 46, ../sass/components/_home.scss */
+  .informacion {
+    flex-flow: row wrap;
+  }
+  /* line 51, ../sass/components/_home.scss */
+  .informacion div:first-child {
+    width: 30%;
+  }
+  /* line 53, ../sass/components/_home.scss */
+  .informacion div:first-child img {
+    margin: 0;
+  }
+  /* line 57, ../sass/components/_home.scss */
+  .informacion div:last-child {
+    width: 70%;
+  }
+  /* line 59, ../sass/components/_home.scss */
+  .informacion div:last-child h2,
+  .informacion div:last-child p {
+    text-align: left;
+  }
+}
+@media (max-width: 575px) {
+  /* line 46, ../sass/components/_home.scss */
+  .informacion {
+    flex-flow: column wrap;
+  }
+  /* line 67, ../sass/components/_home.scss */
+  .informacion div:first-child {
+    width: 100%;
+  }
+  /* line 69, ../sass/components/_home.scss */
+  .informacion div:first-child img {
+    margin: 0 auto 30px auto;
+  }
+  /* line 73, ../sass/components/_home.scss */
+  .informacion div:last-child {
+    width: 100%;
+  }
+  /* line 75, ../sass/components/_home.scss */
+  .informacion div:last-child h2,
+  .informacion div:last-child p {
+    text-align: center;
+  }
+}
+/* line 81, ../sass/components/_home.scss */
+.informacion img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto 50px auto;
+  border: 3px solid #f68244;
+  border-radius: 100%;
+}
+/* line 89, ../sass/components/_home.scss */
+.informacion h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 24px;
+  color: #3e537d;
+}
+/* line 97, ../sass/components/_home.scss */
+.informacion p {
+  text-align: center;
+  font-family: "Roboto Light";
+  font-size: 16px;
+  color: #ababab;
+}
+
+@media (max-width: 991px) {
+  /* line 106, ../sass/components/_home.scss */
+  [class*="col-"]:nth-of-type(2) .informacion {
+    margin: 60px 0;
+  }
+}
+/* line 112, ../sass/components/_home.scss */
+.sobre-nosotros h2 {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+@media (max-width: 991px) {
+  /* line 112, ../sass/components/_home.scss */
+  .sobre-nosotros h2 {
+    margin-bottom: 40px;
+  }
+}
+/* line 120, ../sass/components/_home.scss */
+.sobre-nosotros h2 span {
+  font-family: "Roboto Bold";
+}
+/* line 125, ../sass/components/_home.scss */
+.sobre-nosotros .nosotros i {
+  color: #f68244;
+}
+/* line 128, ../sass/components/_home.scss */
+.sobre-nosotros .nosotros h3 {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 24px;
+  color: #3e537d;
+}
+/* line 135, ../sass/components/_home.scss */
+.sobre-nosotros .nosotros p {
+  text-align: justify;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 141, ../sass/components/_home.scss */
+.sobre-nosotros .nosotros:nth-of-type(2) {
+  margin-top: 60px;
+}
+@media (max-width: 991px) {
+  /* line 141, ../sass/components/_home.scss */
+  .sobre-nosotros .nosotros:nth-of-type(2) {
+    display: none;
+  }
+}
+/* line 148, ../sass/components/_home.scss */
+.sobre-nosotros img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  /* line 148, ../sass/components/_home.scss */
+  .sobre-nosotros img {
+    margin-bottom: 60px;
+  }
+}
+/* line 154, ../sass/components/_home.scss */
+.sobre-nosotros a {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px 60px;
+  background: #f68244;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 163, ../sass/components/_home.scss */
+.sobre-nosotros a:hover {
+  background: #f76b20;
+}
+
+/* line 169, ../sass/components/_home.scss */
+.especialidades h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+/* line 176, ../sass/components/_home.scss */
+.especialidades p {
+  width: 70%;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+@media (max-width: 991px) {
+  /* line 176, ../sass/components/_home.scss */
+  .especialidades p {
+    display: none;
+  }
+}
+/* line 187, ../sass/components/_home.scss */
+.especialidades .container-especialidades {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media (max-width: 991px) {
+  /* line 187, ../sass/components/_home.scss */
+  .especialidades .container-especialidades {
+    display: none;
+  }
+}
+/* line 193, ../sass/components/_home.scss */
+.especialidades .container-especialidades a {
+  width: 25%;
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 0px;
+  padding: 100px 0;
+  background: #35b3dc;
+}
+/* line 200, ../sass/components/_home.scss */
+.especialidades .container-especialidades a img {
+  width: auto;
+  height: 100px;
+  margin-bottom: 15px;
+}
+/* line 205, ../sass/components/_home.scss */
+.especialidades .container-especialidades a p {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFF;
+}
+/* line 211, ../sass/components/_home.scss */
+.especialidades .container-especialidades a:hover {
+  background: #f68244;
+  transform: scale(1.05);
+}
+
+/* line 219, ../sass/components/_home.scss */
+.especialistas h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+/* line 225, ../sass/components/_home.scss */
+.especialistas h2 span {
+  font-family: "Roboto Bold";
+}
+/* line 229, ../sass/components/_home.scss */
+.especialistas p {
+  width: 70%;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+@media (max-width: 991px) {
+  /* line 229, ../sass/components/_home.scss */
+  .especialistas p {
+    display: none;
+  }
+}
+/* line 240, ../sass/components/_home.scss */
+.especialistas .especialista {
+  display: flex;
+  flex-flow: column wrap;
+  background: #FFF;
+  border-bottom: 5px solid #35b3dc;
+}
+/* line 245, ../sass/components/_home.scss */
+.especialistas .especialista img {
+  width: 100%;
+}
+/* line 248, ../sass/components/_home.scss */
+.especialistas .especialista h3 {
+  margin: 10px 0;
+  text-align: center;
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  color: #3e537d;
+}
+/* line 255, ../sass/components/_home.scss */
+.especialistas .especialista p {
+  margin: 0 auto 10px auto;
+  font-family: "Roboto Light";
+  font-size: 12px;
+  color: #ababab;
+}
+/* line 263, ../sass/components/_home.scss */
+.especialistas [class*="col-"]:nth-of-type(2) .especialista {
+  border-bottom: 5px solid #f68244;
+}
+/* line 267, ../sass/components/_home.scss */
+.especialistas a {
+  display: table;
+  margin: 60px auto 0 auto;
+  padding: 20px 60px;
+  background: #f68244;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 276, ../sass/components/_home.scss */
+.especialistas a:hover {
+  background: #f76b20;
+}
+
+/* line 282, ../sass/components/_home.scss */
+.comentarios h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+/* line 288, ../sass/components/_home.scss */
+.comentarios h2 span {
+  font-family: "Roboto Bold";
+}
+/* line 292, ../sass/components/_home.scss */
+.comentarios .comentario {
+  margin-bottom: 40px;
+  padding: 50px 30px;
+  position: relative;
+  background: #35b3dc;
+}
+/* line 297, ../sass/components/_home.scss */
+.comentarios .comentario .tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #35b3dc;
+}
+/* line 304, ../sass/components/_home.scss */
+.comentarios .comentario .tip-down {
+  bottom: -20px;
+  left: 20px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+/* line 311, ../sass/components/_home.scss */
+.comentarios .comentario p {
+  text-align: justify;
+  font-family: "Roboto Light Italic";
+  font-size: 18px;
+  color: #FFF;
+}
+/* line 319, ../sass/components/_home.scss */
+.comentarios .cliente img {
+  width: 100%;
+}
+/* line 322, ../sass/components/_home.scss */
+.comentarios .cliente h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 18px;
+  color: #3e537d;
+}
+/* line 329, ../sass/components/_home.scss */
+.comentarios .cliente p {
+  font-family: "Roboto Light";
+  font-size: 16px;
+  color: #ababab;
+}
+
+/* line 3, ../sass/components/_nuestra-clinica.scss */
+.nuestra-clinica .texto-clinica h2 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #3e537d;
+}
+/* line 9, ../sass/components/_nuestra-clinica.scss */
+.nuestra-clinica .texto-clinica p {
+  text-align: justify;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 15, ../sass/components/_nuestra-clinica.scss */
+.nuestra-clinica .texto-clinica:nth-of-type(2) {
+  margin: 60px 0;
+}
+/* line 19, ../sass/components/_nuestra-clinica.scss */
+.nuestra-clinica img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  /* line 19, ../sass/components/_nuestra-clinica.scss */
+  .nuestra-clinica img {
+    margin-bottom: 60px;
+  }
+}
+
+/* line 27, ../sass/components/_nuestra-clinica.scss */
+.nuestros-valores h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+/* line 33, ../sass/components/_nuestra-clinica.scss */
+.nuestros-valores h2 span {
+  font-family: "Roboto Bold";
+}
+/* line 38, ../sass/components/_nuestra-clinica.scss */
+.nuestros-valores .valor .titulo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* line 42, ../sass/components/_nuestra-clinica.scss */
+.nuestros-valores .valor .titulo img {
+  height: 50px;
+}
+/* line 45, ../sass/components/_nuestra-clinica.scss */
+.nuestros-valores .valor .titulo h3 {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 28px;
+  color: #3e537d;
+}
+/* line 52, ../sass/components/_nuestra-clinica.scss */
+.nuestros-valores .valor p {
+  text-align: justify;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+
+@media (max-width: 991px) {
+  /* line 62, ../sass/components/_nuestra-clinica.scss */
+  [class*="col-"]:nth-of-type(2) .valor {
+    margin: 40px 0;
+  }
+}
+/* line 2, ../sass/components/_equipo.scss */
+.equipo h2 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #3e537d;
+}
+/* line 8, ../sass/components/_equipo.scss */
+.equipo p {
+  margin-bottom: 40px;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+@media (max-width: 991px) {
+  /* line 8, ../sass/components/_equipo.scss */
+  .equipo p {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  /* line 17, ../sass/components/_equipo.scss */
+  .equipo .doctor {
+    margin-bottom: 70px;
+  }
+}
+/* line 21, ../sass/components/_equipo.scss */
+.equipo .doctor img {
+  width: 100%;
+}
+/* line 24, ../sass/components/_equipo.scss */
+.equipo .doctor h3 {
+  margin: 20px 0;
+  font-family: "Roboto Medium";
+  font-size: 24px;
+  color: #3e537d;
+}
+/* line 30, ../sass/components/_equipo.scss */
+.equipo .doctor p {
+  margin-bottom: 0;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #3e537d;
+}
+/* line 36, ../sass/components/_equipo.scss */
+.equipo .doctor hr {
+  width: 150px;
+  margin: 20px 0;
+  border-top: 1px solid #f68244;
+}
+/* line 42, ../sass/components/_equipo.scss */
+.equipo .doctor ul li {
+  margin-bottom: 10px;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 47, ../sass/components/_equipo.scss */
+.equipo .doctor ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 4, ../sass/components/_especialidades.scss */
+.tabs-especialidades .nav-tabs {
+  margin-bottom: 80px;
+  border-bottom: 0;
+}
+@media (max-width: 991px) {
+  /* line 4, ../sass/components/_especialidades.scss */
+  .tabs-especialidades .nav-tabs {
+    margin-bottom: 50px;
+  }
+}
+/* line 10, ../sass/components/_especialidades.scss */
+.tabs-especialidades .nav-tabs .nav-item {
+  margin-bottom: 0;
+  border-left: 1px solid #f68244;
+}
+@media (max-width: 991px) {
+  /* line 10, ../sass/components/_especialidades.scss */
+  .tabs-especialidades .nav-tabs .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #ababab;
+    border-left: 0;
+  }
+}
+/* line 18, ../sass/components/_especialidades.scss */
+.tabs-especialidades .nav-tabs .nav-item .nav-link {
+  border: 0;
+  font-family: "Roboto Light";
+  font-size: 20px;
+  color: #3e537d;
+}
+@media (max-width: 991px) {
+  /* line 18, ../sass/components/_especialidades.scss */
+  .tabs-especialidades .nav-tabs .nav-item .nav-link {
+    padding: .5rem 0;
+  }
+}
+/* line 26, ../sass/components/_especialidades.scss */
+.tabs-especialidades .nav-tabs .nav-item .nav-link.active {
+  color: #f68244;
+}
+/* line 29, ../sass/components/_especialidades.scss */
+.tabs-especialidades .nav-tabs .nav-item .nav-link:hover {
+  color: #f76b20;
+}
+/* line 33, ../sass/components/_especialidades.scss */
+.tabs-especialidades .nav-tabs .nav-item:first-child {
+  border-left: 0;
+}
+/* line 39, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+/* line 43, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+@media (max-width: 991px) {
+  /* line 43, ../sass/components/_especialidades.scss */
+  .tabs-especialidades .tab-content h2 {
+    text-align: left;
+  }
+}
+/* line 53, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content p {
+  text-align: justify;
+  margin-bottom: 50px;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 60, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content h3 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #3e537d;
+}
+/* line 66, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content ul {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 70px;
+}
+@media (max-width: 991px) {
+  /* line 66, ../sass/components/_especialidades.scss */
+  .tabs-especialidades .tab-content ul {
+    width: 100%;
+    flex-flow: column wrap;
+    margin-bottom: 50px;
+  }
+}
+/* line 76, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content ul li {
+  width: 50%;
+  margin-bottom: 10px;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+@media (max-width: 991px) {
+  /* line 76, ../sass/components/_especialidades.scss */
+  .tabs-especialidades .tab-content ul li {
+    width: 100%;
+  }
+}
+/* line 85, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content ul li::before {
+  margin-right: 20px;
+  color: #f68244;
+  content: "•";
+}
+/* line 90, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 95, ../sass/components/_especialidades.scss */
+.tabs-especialidades .tab-content h4 {
+  margin-bottom: 30px;
+  font-family: "Roboto Medium";
+  font-size: 22px;
+  color: #ababab;
+}
+
+/* line 2, ../sass/components/_tips.scss */
+.page-tips .tip {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 70px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ababab;
+}
+/* line 8, ../sass/components/_tips.scss */
+.page-tips .tip img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  /* line 8, ../sass/components/_tips.scss */
+  .page-tips .tip img {
+    margin-bottom: 50px;
+  }
+}
+/* line 14, ../sass/components/_tips.scss */
+.page-tips .tip h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto Bold";
+  font-size: 28px;
+  color: #3e537d;
+}
+/* line 21, ../sass/components/_tips.scss */
+.page-tips .tip h3 {
+  margin-bottom: 30px;
+  font-family: "Roboto Light";
+  font-size: 16px;
+  color: #f68244;
+}
+/* line 27, ../sass/components/_tips.scss */
+.page-tips .tip p {
+  margin-bottom: 0;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 33, ../sass/components/_tips.scss */
+.page-tips .tip a {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px 60px;
+  background: #f68244;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 42, ../sass/components/_tips.scss */
+.page-tips .tip a:hover {
+  background: #f76b20;
+}
+/* line 49, ../sass/components/_tips.scss */
+.page-tips nav ul li {
+  margin: 0 10px;
+}
+/* line 51, ../sass/components/_tips.scss */
+.page-tips nav ul li a {
+  background: #dbeef4;
+  border: 0;
+  border-radius: 0 !important;
+  color: #3e537d;
+}
+/* line 56, ../sass/components/_tips.scss */
+.page-tips nav ul li a:hover {
+  background: #35b3dc;
+  color: #FFF;
+}
+/* line 62, ../sass/components/_tips.scss */
+.page-tips nav ul li.disabled a {
+  background: #35b3dc !important;
+  color: #FFF !important;
+}
+
+/* line 2, ../sass/components/_single-tip.scss */
+.single-tip .tip {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ababab;
+}
+/* line 5, ../sass/components/_single-tip.scss */
+.single-tip .tip img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+/* line 9, ../sass/components/_single-tip.scss */
+.single-tip .tip h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 24px;
+  color: #3e537d;
+}
+/* line 16, ../sass/components/_single-tip.scss */
+.single-tip .tip h3 {
+  margin-bottom: 40px;
+  font-family: "Roboto Light";
+  font-size: 16px;
+  color: #f68244;
+}
+/* line 22, ../sass/components/_single-tip.scss */
+.single-tip .tip p {
+  margin-bottom: 30px;
+  text-align: justify;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 28, ../sass/components/_single-tip.scss */
+.single-tip .tip p:last-child {
+  margin-bottom: 0;
+}
+/* line 32, ../sass/components/_single-tip.scss */
+.single-tip .tip blockquote {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 3px solid #35b3dc;
+  text-align: justify;
+  font-family: "Roboto Medium Italic";
+  font-size: 18px;
+  color: #ababab;
+}
+
+/* line 2, ../sass/components/_sucursales.scss */
+.sucursales .embed-responsive {
+  margin-bottom: 50px;
+}
+/* line 4, ../sass/components/_sucursales.scss */
+.sucursales .embed-responsive iframe {
+  filter: grayscale(100%);
+}
+/* line 8, ../sass/components/_sucursales.scss */
+.sucursales p {
+  margin-bottom: 70px;
+  font-family: "Roboto Light";
+  font-size: 20px;
+  color: #ababab;
+}
+/* line 14, ../sass/components/_sucursales.scss */
+.sucursales .sucursal {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 90px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ababab;
+}
+/* line 20, ../sass/components/_sucursales.scss */
+.sucursales .sucursal img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  /* line 20, ../sass/components/_sucursales.scss */
+  .sucursales .sucursal img {
+    margin-bottom: 40px;
+  }
+}
+/* line 26, ../sass/components/_sucursales.scss */
+.sucursales .sucursal h2 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 30px;
+  color: #3e537d;
+}
+/* line 33, ../sass/components/_sucursales.scss */
+.sucursales .sucursal p {
+  margin-bottom: 10px;
+  font-family: "Roboto Light";
+  font-size: 20px;
+  color: #ababab;
+}
+/* line 38, ../sass/components/_sucursales.scss */
+.sucursales .sucursal p span {
+  font-family: "Roboto Medium";
+}
+/* line 41, ../sass/components/_sucursales.scss */
+.sucursales .sucursal p a {
+  color: #f68244;
+}
+/* line 43, ../sass/components/_sucursales.scss */
+.sucursales .sucursal p a:hover {
+  color: #f76b20;
+}
+/* line 47, ../sass/components/_sucursales.scss */
+.sucursales .sucursal p:last-child {
+  margin-bottom: 0;
+}
+/* line 51, ../sass/components/_sucursales.scss */
+.sucursales .sucursal a.como-llegar {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px 60px;
+  background: #f68244;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 60, ../sass/components/_sucursales.scss */
+.sucursales .sucursal a.como-llegar:hover {
+  background: #f76b20;
+}
+/* line 64, ../sass/components/_sucursales.scss */
+.sucursales .sucursal:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+/* line 2, ../sass/components/_contacto.scss */
+.contacto .informacion {
+  padding: 60px 70px;
+  background: #f0faff;
+}
+@media (max-width: 991px) {
+  /* line 2, ../sass/components/_contacto.scss */
+  .contacto .informacion {
+    margin-bottom: 50px;
+    padding: 30px 40px;
+  }
+}
+/* line 9, ../sass/components/_contacto.scss */
+.contacto .informacion p {
+  text-align: left;
+  font-family: "Roboto Light";
+  font-size: 22px;
+  color: #3e537d;
+}
+/* line 14, ../sass/components/_contacto.scss */
+.contacto .informacion p span {
+  font-family: "Roboto Medium";
+}
+/* line 19, ../sass/components/_contacto.scss */
+.contacto h2 {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ababab;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 28px;
+  color: #3e537d;
+}
+@media (max-width: 991px) {
+  /* line 19, ../sass/components/_contacto.scss */
+  .contacto h2 {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+/* line 33, ../sass/components/_contacto.scss */
+.contacto form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #eee;
+  font-family: "Roboto Light";
+  font-size: 16px;
+  color: #ababab;
+  transition: .3s ease-in-out;
+}
+/* line 42, ../sass/components/_contacto.scss */
+.contacto form input::-webkit-input-placeholder {
+  color: #ababab;
+}
+/* line 45, ../sass/components/_contacto.scss */
+.contacto form input:focus {
+  border: 1px solid #3e537d;
+  transition: .3s ease-in;
+}
+/* line 50, ../sass/components/_contacto.scss */
+.contacto form textarea {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 1px solid #eee;
+  font-family: "Roboto Light";
+  font-size: 16px;
+  color: #ababab;
+  resize: none;
+  transition: .3s ease-in-out;
+}
+/* line 61, ../sass/components/_contacto.scss */
+.contacto form textarea::-webkit-input-placeholder {
+  color: #ababab;
+}
+/* line 64, ../sass/components/_contacto.scss */
+.contacto form textarea:focus {
+  border: 1px solid #3e537d;
+  transition: .3s ease-in;
+}
+/* line 69, ../sass/components/_contacto.scss */
+.contacto form input[type="submit"] {
+  width: auto;
+  display: inline-block;
+  padding: 20px 60px;
+  background: #f68244;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #FFF;
+  transition: .3s ease-in-out;
+}
+/* line 80, ../sass/components/_contacto.scss */
+.contacto form input[type="submit"]:hover {
+  background: #f76b20;
+  transition: .3s ease-in;
+}
+/* line 86, ../sass/components/_contacto.scss */
+.contacto ul {
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ababab;
+}
+/* line 90, ../sass/components/_contacto.scss */
+.contacto ul li {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  font-family: "Roboto Light";
+  color: #ababab;
+}
+/* line 96, ../sass/components/_contacto.scss */
+.contacto ul li i {
+  width: 5%;
+}
+/* line 99, ../sass/components/_contacto.scss */
+.contacto ul li p {
+  width: 90%;
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 104, ../sass/components/_contacto.scss */
+.contacto ul li a {
+  margin-left: 10px;
+  color: #f68244;
+}
+/* line 107, ../sass/components/_contacto.scss */
+.contacto ul li a:hover {
+  color: #3e537d;
+}
+/* line 111, ../sass/components/_contacto.scss */
+.contacto ul li:last-child {
+  margin-bottom: 0;
+}
+/* line 117, ../sass/components/_contacto.scss */
+.contacto a i {
+  font-size: 40px;
+  color: #ababab;
+  transition: .3s ease-in-out;
+}
+@media (max-width: 991px) {
+  /* line 117, ../sass/components/_contacto.scss */
+  .contacto a i {
+    margin-bottom: 70px;
+  }
+}
+/* line 126, ../sass/components/_contacto.scss */
+.contacto a:hover i {
+  color: #f76b20;
+  transition: .3s ease-in;
+}
+
+/* line 19, ../sass/main.scss */
+.linea {
+  width: 100%;
+  height: 1px;
+  background: #eee;
+}
+
+/* line 24, ../sass/main.scss */
+.row-espacio {
+  margin-top: 50px;
+}
+@media (max-width: 991px) {
+  /* line 24, ../sass/main.scss */
+  .row-espacio {
+    margin-top: 0;
+  }
+}
+
+/* line 30, ../sass/main.scss */
+.bg-color {
+  background: #f5fcff;
+}
+@media (max-width: 991px) {
+  /* line 33, ../sass/main.scss */
+  .bg-color .postid- {
+    background: #FFF;
+  }
+}
+
+/* line 38, ../sass/main.scss */
+.bg-titulo {
+  background: url("../images/bg-titulo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 43, ../sass/main.scss */
+.bg-titulo h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #FFF;
+}
+/* line 47, ../sass/main.scss */
+.bg-titulo h1 span {
+  font-family: "Roboto Bold";
+}
+
+/* line 53, ../sass/main.scss */
+.tips h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #3e537d;
+}
+/* line 59, ../sass/main.scss */
+.tips h2 span {
+  font-family: "Roboto Bold";
+}
+/* line 63, ../sass/main.scss */
+.tips p {
+  width: 70%;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+@media (max-width: 991px) {
+  /* line 63, ../sass/main.scss */
+  .tips p {
+    display: none;
+  }
+}
+/* line 75, ../sass/main.scss */
+.tips .tip a {
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  text-transform: none;
+}
+/* line 80, ../sass/main.scss */
+.tips .tip a img {
+  width: 100%;
+  transition: .3s ease-in-out;
+}
+/* line 84, ../sass/main.scss */
+.tips .tip a h3 {
+  height: 50px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Roboto Medium";
+  font-size: 24px;
+  color: #3e537d;
+  transition: .3s ease-in-out;
+}
+/* line 93, ../sass/main.scss */
+.tips .tip a:hover {
+  background: none;
+}
+/* line 95, ../sass/main.scss */
+.tips .tip a:hover img {
+  opacity: .5;
+  transition: .3s ease-in;
+}
+/* line 99, ../sass/main.scss */
+.tips .tip a:hover h3 {
+  color: #f76b20;
+  transition: .3s ease-in;
+}
+/* line 105, ../sass/main.scss */
+.tips .tip p {
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: "Roboto Light";
+  font-size: 18px;
+  color: #ababab;
+}
+/* line 114, ../sass/main.scss */
+.tips a {
+  display: table;
+  margin: 60px auto 0 auto;
+  padding: 20px 60px;
+  background: #f68244;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+  font-size: 14px;
+  color: #FFF;
+}
+/* line 123, ../sass/main.scss */
+.tips a:hover {
+  background: #f76b20;
+}

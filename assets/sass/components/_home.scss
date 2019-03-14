@@ -1,0 +1,335 @@
+.swiper-container {
+	width: 100%;
+	height: 100%;
+	.swiper-slide {
+		height: 600px;
+		display: flex;
+		align-items: center;
+		background-position: center !important;
+		background-repeat: no-repeat !important;
+		background-size: cover !important;
+		.texto {
+			width: 50%;
+			@media (max-width: 991px) {
+				width: 100%;
+			}
+			h2 {
+				margin-bottom: 30px;
+				text-transform: uppercase;
+				font-size: 40px;
+				color: $blanco;
+				span {
+					font-family: "Roboto Bold";
+				}
+			}
+			p {
+				margin-bottom: 20px;
+				font-size: 14px;
+				color: $blanco;
+			}
+			a {
+				display: inline-block;
+				padding: 15px 30px;
+				background: $blanco;
+				text-transform: uppercase;
+				font-family: "Roboto Medium";
+				font-size: 14px;
+				color: $azul;
+				&:hover {
+					background: $naranjo-hover;
+					color: $blanco;
+				}
+			}
+		}
+	}
+}
+.informacion {
+	display: flex;
+	flex-flow: column wrap;
+	@media (max-width: 991px) {
+		flex-flow: row wrap;
+		div:first-child {
+			width: 30%;
+			img {
+				margin: 0;
+			}
+		}
+		div:last-child {
+			width: 70%;
+			h2,
+			p {
+				text-align: left;
+			}
+		}
+	}
+	@media (max-width: 575px) {
+		flex-flow: column wrap;
+		div:first-child {
+			width: 100%;
+			img {
+				margin: 0 auto 30px auto;
+			}
+		}
+		div:last-child {
+			width: 100%;
+			h2,
+			p {
+				text-align: center;
+			}
+		}
+	}
+	img {
+		width: 130px;
+		height: 130px;
+		display: block;
+		margin: 0 auto 50px auto;
+		border: 3px solid $naranjo;
+		border-radius: 100%;
+	}
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Roboto Medium";
+		font-size: 24px;
+		color: $azul;
+	}
+	p {
+		text-align: center;
+		font-family: "Roboto Light";
+		font-size: 16px;
+		color: $gris-medio;
+	}
+}
+@media (max-width: 991px) {
+	[class*="col-"]:nth-of-type(2) {
+		.informacion {
+			margin: 60px 0;
+		}
+	}
+}
+.sobre-nosotros {
+	h2 {
+		margin-bottom: 60px;
+		text-transform: uppercase;
+		font-size: 36px;
+		color: $azul;
+		@media (max-width: 991px) {
+			margin-bottom: 40px;
+		}
+		span {
+			font-family: "Roboto Bold";
+		}
+	}
+	.nosotros {
+		i {
+			color: $naranjo;
+		}
+		h3 {
+			display: inline-block;
+			margin-bottom: 20px;
+			margin-left: 20px;
+			font-size: 24px;
+			color: $azul;
+		}
+		p {
+			text-align: justify;
+			font-family: "Roboto Light";
+			font-size: 18px;
+			color: $gris-medio;
+		}
+		&:nth-of-type(2) {
+			margin-top: 60px;
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+	img {
+		width: 100%;
+		@media (max-width: 991px) {
+			margin-bottom: 60px;
+		}
+	}
+	a {
+		display: inline-block;
+		margin-top: 40px;
+		padding: 20px 60px;
+		background: $naranjo;
+		text-transform: uppercase;
+		font-family: "Roboto Medium";
+		font-size: 14px;
+		color: $blanco;
+		&:hover {
+			background: $naranjo-hover;
+		}
+	}
+}
+.especialidades {
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 36px;
+		color: $azul;
+	}
+	p {
+		width: 70%;
+		margin: 0 auto 60px auto;
+		text-align: center;
+		font-family: "Roboto Light";
+		font-size: 18px;
+		color: $gris-medio;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	.container-especialidades {
+		display: flex;
+		flex-flow: row wrap;
+		@media (max-width: 991px) {
+			display: none;
+		}
+		a {
+			width: 25%;
+			display: flex;
+			flex-flow: column wrap;
+			flex: 1 1 0px;
+			padding: 100px 0;
+			background: $celeste;
+			img {
+				width: auto;
+				height: 100px;
+				margin-bottom: 15px;
+			}
+			p {
+				margin: 0 auto;
+				text-transform: uppercase;
+				font-size: 20px;
+				color: $blanco;
+			}
+			&:hover {
+				background: $naranjo;
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+.especialistas {
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 36px;
+		color: $azul;
+		span {
+			font-family: "Roboto Bold";
+		}
+	}
+	p {
+		width: 70%;
+		margin: 0 auto 60px auto;
+		text-align: center;
+		font-family: "Roboto Light";
+		font-size: 18px;
+		color: $gris-medio;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	.especialista {
+		display: flex;
+		flex-flow: column wrap;
+		background: $blanco;
+		border-bottom: 5px solid $celeste;
+		img {
+			width: 100%;
+		}
+		h3 {
+			margin: 10px 0;
+			text-align: center;
+			font-family: "Roboto Medium";
+			font-size: 18px;
+			color: $azul;
+		}
+		p {
+			margin: 0 auto 10px auto;
+			font-family: "Roboto Light";
+			font-size: 12px;
+			color: $gris-medio;
+		}
+	}
+	[class*="col-"]:nth-of-type(2) {
+		.especialista {
+			border-bottom: 5px solid $naranjo;
+		}
+	}
+	a {
+		display: table;
+		margin: 60px auto 0 auto;
+		padding: 20px 60px;
+		background: $naranjo;
+		text-transform: uppercase;
+		font-family: "Roboto Medium";
+		font-size: 14px;
+		color: $blanco;
+		&:hover {
+			background: $naranjo-hover;
+		}
+	}
+}
+.comentarios {
+	h2 {
+		margin-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 36px;
+		color: $azul;
+		span {
+			font-family: "Roboto Bold";
+		}
+	}
+	.comentario {
+		margin-bottom: 40px;
+		padding: 50px 30px;
+		position: relative;
+		background: $celeste;
+		.tip {
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			background: transparent;
+			border: 10px solid $celeste;
+		}
+		.tip-down {
+			bottom: -20px;
+			left: 20px;
+			border-right-color: transparent;
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+		}
+		p {
+			text-align: justify;
+			font-family: "Roboto Light Italic";
+			font-size: 18px;
+			color: $blanco;
+		}
+	}
+	.cliente {
+		img {
+			width: 100%;
+		}
+		h3 {
+			margin-bottom: 10px;
+			text-transform: uppercase;
+			font-family: "Roboto Medium";
+			font-size: 18px;
+			color: $azul;
+		}
+		p {
+			font-family: "Roboto Light";
+			font-size: 16px;
+			color: $gris-medio;
+		}
+	}
+}

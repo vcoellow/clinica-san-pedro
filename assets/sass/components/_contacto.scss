@@ -1,0 +1,132 @@
+.contacto {
+	.informacion {
+		padding: 60px 70px;
+		background: #f0faff;
+		@media (max-width: 991px) {
+			margin-bottom: 50px;
+			padding: 30px 40px;
+		}
+		p {
+			text-align: left;
+			font-family: "Roboto Light";
+			font-size: 22px;
+			color: $azul;
+			span {
+				font-family: "Roboto Medium";
+			}
+		}
+	}
+	h2 {
+		margin-bottom: 50px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $gris-medio;
+		text-transform: uppercase;
+		font-family: "Roboto Medium";
+		font-size: 28px;
+		color: $azul;
+		@media (max-width: 991px) {
+			padding-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+	form {
+		input {
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 15px;
+			border: 1px solid $gris-claro;
+			font-family: "Roboto Light";
+			font-size: 16px;
+			color: $gris-medio;
+			transition: .3s ease-in-out;
+			&::-webkit-input-placeholder {
+				color: $gris-medio;
+			}
+			&:focus {
+				border: 1px solid $azul;
+				transition: .3s ease-in;
+			}
+		}
+		textarea {
+			width: 100%;
+			min-height: 200px;
+			margin-bottom: 40px;
+			padding: 15px;
+			border: 1px solid $gris-claro;
+			font-family: "Roboto Light";
+			font-size: 16px;
+			color: $gris-medio;
+			resize: none;
+			transition: .3s ease-in-out;
+			&::-webkit-input-placeholder {
+				color: $gris-medio;
+			}
+			&:focus {
+				border: 1px solid $azul;
+				transition: .3s ease-in;
+			}
+		}
+		input[type="submit"] {
+			width: auto;
+			display: inline-block;
+			padding: 20px 60px;
+			background: $naranjo;
+			border: 0;
+			text-transform: uppercase;
+			font-family: "Roboto Medium";
+			font-size: 14px;
+			color: $blanco;
+			transition: .3s ease-in-out;
+			&:hover {
+				background: $naranjo-hover;
+				transition: .3s ease-in;
+			}
+		}
+	}
+	ul {
+		margin-bottom: 20px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid $gris-medio;
+		li {
+			display: flex;
+			flex-flow: row wrap;
+			margin-bottom: 20px;
+			font-family: "Roboto Light";
+			color: $gris-medio;
+			i {
+				width: 5%;
+			}
+			p {
+				width: 90%;
+				display: inline-block;
+				margin-left: 10px;
+			}
+			a {
+				margin-left: 10px;
+				color: $naranjo;
+				&:hover {
+					color: $azul;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	a {
+		i {
+			font-size: 40px;
+			color: $gris-medio;
+			transition: .3s ease-in-out;
+			@media (max-width: 991px) {
+				margin-bottom: 70px;
+			}
+		}
+		&:hover {
+			i {
+				color: $naranjo-hover;
+				transition: .3s ease-in;
+			}
+		}
+	}
+}

@@ -1,0 +1,167 @@
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background: $blanco;
+	@media (max-width: 991px) {
+		.container {
+			max-width: none;
+		}
+	}
+	.horarios {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		i {
+			color: $azul;
+		}
+		p {
+			display: inline-block;
+			margin-left: 10px;
+			font-size: 14px;
+			color: $azul;
+			@media (max-width: 1199px) {
+				font-size: 12px;
+			}
+		}
+	}
+	.contacto {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		div {
+			flex: 1;
+			text-align: right;
+			i {
+				color: $azul;
+			}
+			a {
+				margin-left: 10px;
+				font-size: 14px;
+				color: $azul;
+				@media (max-width: 1199px) {
+					font-size: 12px;
+				}
+				&:hover {
+					color: $naranjo-hover;
+				}
+			}
+		}
+	}
+	a.logo {
+		img {
+			max-width: 200px;
+		}
+	}
+	nav {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		@media (max-width: 991px) {
+			height: auto;
+		}
+		ul {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			margin: 0;
+			li {
+				margin: 0 10px;
+				@media (max-width: 1199px) {
+					margin: 0 7px;
+				}
+				a {
+					display: block;
+					margin: 0 auto;
+					text-transform: uppercase;
+					font-size: 14px;
+					color: $azul;
+					@media (max-width: 1199px) {
+						font-size: 12px;
+					}
+					&:hover {
+						color: $naranjo-hover;
+					}
+				}
+				&:last-child {
+					margin-right: 0;
+					background: $naranjo;
+					a {
+						padding: 20px;
+						color: $blanco;
+						&:hover {
+							background: $naranjo-hover;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 991px) {
+		.navbar {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.navbar-brand {
+			margin: 0;
+			padding: 0;
+			img {
+				width: 300px;
+				@media (max-width: 400px) {
+					width: 200px;
+				}
+			}
+		}
+		nav {
+			button {
+				padding: 0 !important;
+				border: 0 !important;
+				border-radius: 0 !important;
+				i {
+					font-size: 40px;
+					color: $azul;
+				}
+			}
+			ul {
+				display: block;
+				margin-top: 50px;
+				li {
+					width: 100%;
+					margin: 0;
+					padding: 10px 0;
+					border-top: 1px solid $azul;
+					a {
+						text-align: center;
+						font-size: 14px;
+					}
+					&:hover {
+						background: $naranjo-hover;
+						a {
+							color: $blanco;
+						}
+					}
+					&:last-child {
+						padding: 10px 0;
+						background: none;
+						border-bottom: 1px solid $azul;
+						a {
+							padding: 0;
+							color: $azul;
+							&:hover {
+								background: none;
+							}
+						}
+						&:hover {
+							background: $naranjo-hover;
+							a {
+								color: $blanco;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,157 @@
+footer {
+	padding-top: 70px;
+	background: #414d5f;
+	@media (max-width: 991px) {
+		margin-bottom: 100px;
+	}
+	a.logo {
+		img {
+			max-width: 300px;
+			margin-bottom: 20px;
+			@media (max-width: 991px) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+	p {
+		width: 80%;
+		font-size: 14px;
+		color: $blanco;
+		@media (max-width: 1199px) {
+			font-size: 12px;
+		}
+	}
+	h2 {
+		margin-bottom: 20px;
+		text-transform: uppercase;
+		font-family: "Roboto Bold";
+		font-size: 14px;
+		color: $blanco;
+		@media (max-width: 991px) {
+			margin-top: 10px;
+		}
+	}
+	ul {
+		@media (max-width: 991px) {
+			margin-bottom: 0;
+		}
+		li {
+			margin-bottom: 10px;
+			@media (max-width: 991px) {
+				br {
+					display: none;
+				}
+			}
+			a {
+				text-transform: uppercase;
+				font-size: 14px;
+				color: $blanco;
+				@media (max-width: 1199px) {
+					font-size: 12px;
+				}
+				&:hover {
+					color: $naranjo-hover;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.linea {
+		margin-top: 20px;
+		border: 1px solid #516076;
+	}
+	.copyright {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		@media (max-width: 991px) {
+			height: 100px;
+		}
+		div:nth-child(2) {
+			text-align: right;
+			@media (max-width: 991px) {
+				text-align: left;
+			}
+		}
+		p {
+			font-size: 14px;
+			@media (max-width: 1199px) {
+				font-size: 12px;
+			}
+		}
+		span {
+			font-size: 14px;
+			color: $blanco;
+			@media (max-width: 1199px) {
+				font-size: 12px;
+			}
+		}
+		a {
+			margin-left: 10px;
+			color: $blanco;
+			&:hover {
+				color: $naranjo-hover;
+			}
+		}
+	}
+	.card {
+		background: none;
+		border: 0;
+		border-top: 1px solid $blanco;
+		border-bottom: 1px solid $blanco;
+		border-radius: 0;
+		&:nth-child(2) {
+			border-top: 0;
+		}
+		button {
+			margin-bottom: 10px;
+			padding: 10px 0 0 0;
+			text-transform: uppercase;
+			font-family: "Roboto Bold";
+			font-size: 14px;
+			color: $blanco;
+			&:after {
+				position: absolute;
+				top: 6px;
+				right: 0;
+				font-size: 20px;
+				color: $blanco;
+				content: "-";
+			}
+			&.collapsed:after {
+				content: "+";
+			}
+			&:hover {
+				text-decoration: none;
+				color: $blanco;
+			}
+		}
+		a.boton-reserva {
+			display: none !important;
+		}
+	}
+	a.boton-reserva {
+		display: none;
+		@media (max-width: 991px) {
+			width: 100%;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			background: $naranjo;
+			border-top: 3px solid $naranjo-hover;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 30px;
+			color: $blanco;
+			&:hover {
+				background: $naranjo-hover;
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.page-tips {
+	.tip {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 70px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid $gris-medio;
+		img {
+			width: 100%;
+			@media (max-width: 991px) {
+				margin-bottom: 50px;
+			}
+		}
+		h2 {
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-family: "Roboto Bold";
+			font-size: 28px;
+			color: $azul;
+		}
+		h3 {
+			margin-bottom: 30px;
+			font-family: "Roboto Light";
+			font-size: 16px;
+			color: $naranjo;
+		}
+		p {
+			margin-bottom: 0;
+			font-family: "Roboto Light";
+			font-size: 18px;
+			color: $gris-medio;
+		}
+		a {
+			display: inline-block;
+			margin-top: 40px;
+			padding: 20px 60px;
+			background: $naranjo;
+			text-transform: uppercase;
+			font-family: "Roboto Medium";
+			font-size: 14px;
+			color: $blanco;
+			&:hover {
+				background: $naranjo-hover;
+			}
+		}
+	}
+	nav {
+		ul {
+			li {
+				margin: 0 10px;
+				a {
+					background: #dbeef4;
+					border: 0;
+					border-radius: 0 !important;
+					color: $azul;
+					&:hover {
+						background: $celeste;
+						color: $blanco;
+					}
+				}
+				&.disabled {
+					a {
+						background: $celeste !important;
+						color: $blanco !important;
+					}
+				}
+			}
+		}
+	}
+}
